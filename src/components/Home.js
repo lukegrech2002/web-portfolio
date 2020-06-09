@@ -11,7 +11,7 @@ class Home extends Component {
             <img src={require("../assets/images/avatar.png")}></img>
             <h1>Luke Grech</h1>
           </div>
-          <h2 class="line-1 anim-typewriter">Front End Developer & Student</h2>
+          <h2 class="line-1 anim-typewriter">Front End Developerg Student</h2>
         </div>
         <div className="home-accounts">
           <div className="home-accounts-linkedin">
@@ -56,13 +56,19 @@ class Home extends Component {
         </div>
         <div className="home-div3">
           <Link to="/about">
-            <button className="navigate-page-button"><a>About Me</a></button>
+            <button className="navigate-page-button">
+              <a>About Me</a>
+            </button>
           </Link>
           <Link to="/portfolio">
-            <button className="navigate-page-button"><a>View Portfolio</a></button>
+            <button className="navigate-page-button">
+              <a>View Portfolio</a>
+            </button>
           </Link>
           <Link to="/contact">
-            <button className="navigate-page-button"><a>Contact Me</a></button>
+            <button className="navigate-page-button">
+              <a>Contact Me</a>
+            </button>
           </Link>
         </div>
       </React.Fragment>

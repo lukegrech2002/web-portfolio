@@ -1,0 +1,312 @@
+.about-div1 {
+  margin-top: 6em;
+  height: 90vh;
+}
+
+.about-title-div {
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: center;
+  height: 4em;
+}
+
+.about-title-div a {
+  line-height: 4em;
+}
+
+.about-title-underline {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  font-size: 2em;
+}
+
+.about-title-underline,
+.about-title-underline,
+.about-title-underline,
+.about-title-underline {
+  color: #fff;
+  text-decoration: none;
+}
+.about-title-underline::after {
+  content: "";
+  position: absolute;
+}
+.about-title-div .about-title-underline::after {
+  top: 65%;
+  height: 2px;
+  width: 90%;
+  left: 5%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.about-card {
+  width: 50%;
+  height: 50%;
+  background-color: #232423;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 15% 15% 70%;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  color: white;
+  margin: auto;
+  margin-top: 5em;
+  z-index: -1;
+  box-shadow: 0 4px 8px 0 rgba(163, 163, 163, 0.2);
+  transition: 0.3s;
+  border-radius: 0.5em;
+}
+
+.about-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(163, 163, 163, 0.2);
+}
+
+.about-card-name h3 {
+  text-align: center;
+  margin-top: 1em;
+  font-size: 1.5em;
+}
+
+.about-card p {
+  margin-top: 1em;
+  font-size: 1em;
+}
+
+.about-card-image {
+  grid-area: 1 / 1 / 4 / 2;
+}
+
+.about-card-image img {
+  /* Max width and height to fit div */
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 0.5em 0em 0em 0.5em;
+}
+
+.about-card-name {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.about-card-job {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.about-card-job h4{
+  text-align: center;
+  margin-top: 1em;
+}
+
+.about-card-description {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+/* About Card PDF Button */
+.cv-link-button {
+  position: relative;
+  padding: 1em 3em;
+  margin-top: 3em;
+  margin-left: 4em;
+  margin-right: 2.5em;
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1.5px solid white;
+  border-radius: 0.5em;
+}
+
+.cv-link-button:focus {
+  outline: none; /*Removes button outline on click */
+}
+
+.cv-link-button a {
+  font-size: 1.25em;
+  text-decoration: none;
+  color: white;
+}
+
+.cv-link-button a {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.cv-link-button a:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -1.5em;
+  transition: 0.5s;
+}
+
+.cv-link-button:hover a {
+  padding-right: 25px;
+}
+
+.cv-link-button:hover a:after {
+  opacity: 1;
+  right: 0;
+}
+
+.about-div2 {
+  min-height: 90vh;
+  background-color: #2d3436;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.5fr 0.5fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+/* Skills section */
+.skills-list-container {
+  grid-area: 1 / 1 / 2 / 2;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 40% 60%;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  list-style-type: none;
+  text-align: center;
+}
+
+.skills-list-container i {
+  font-size: 6em;
+  margin-bottom: 0.1em;
+}
+
+.skills-title {
+  grid-area: 1 / 1 / 2 / 5;
+}
+
+.skills-title h2 {
+  grid-area: 1 / 1 / 2 / 5;
+  margin-top: 2em;
+}
+
+.skills-list-container li {
+  font-size: 1.25em;
+}
+
+.skill1 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.skill1 i {
+  color: #ff5733;
+}
+
+.skill2 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.skill2 i {
+  color: #264de4;
+}
+
+.skill3 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.skill3 i {
+  color: #f7df1e;
+}
+
+.skill4 {
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+.skill4 i {
+  color: #61dbfb;
+}
+
+.technologies-list {
+  grid-area: 2 / 1 / 3 / 2;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.technologies-list li {
+  display: inline-block;
+  margin: 3em;
+  font-size: 1.25em;
+}
+
+@media (max-width: 768px) {
+  .about-div1 {
+    height: 150vh;
+  }
+
+  .about-title-div {
+    margin-bottom: 5em;
+  }
+
+  /* Responsive about card */
+  .about-card {
+    margin-top: -0.75em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr repeat(2, 0.5fr) 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 70%;
+  }
+
+  .about-card p{
+    margin-left: 1em;
+  }
+  .about-card-image {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: #232423;
+  }
+  .about-card-image img{
+    border-radius: 0;
+  }
+  .about-card-name {
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: #232423;
+  }
+  .about-card-job {
+    grid-area: 3 / 1 / 4 / 2;
+    background-color: #232423;
+  }
+  .about-card-description {
+    grid-area: 4 / 1 / 5 / 2;
+    background-color: #232423;
+  }
+  .cv-link-button {
+    margin-left: 4.5em;
+   margin-bottom: 2em;
+  }
+
+  /* Skills div */
+  .skills-list-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .skills-title{
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .skill1{
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .skill2{
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  .skill3{
+    grid-area: 4 / 1 / 5 / 2;
+  }
+  .skill4{
+    grid-area: 5 / 1 / 6 / 2;
+  }
+}

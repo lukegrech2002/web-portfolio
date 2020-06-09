@@ -1,0 +1,24 @@
+.toggle-button{
+    display: flex;
+    flex-direction: column; /*Making the burger icon lines underneath eachother */
+    justify-content: space-around; 
+    height: 2em;
+    width: 2em;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    box-sizing: border-box;
+    margin-left: 0.75em;
+}
+
+
+.toggle-button:focus{
+    outline: none; /*Removes button outline on click */
+}
+
+.toggle-button-line{
+    width: 2em;
+    height: 2.5px;
+    background-color: white;
+}

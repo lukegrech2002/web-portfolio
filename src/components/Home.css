@@ -1,0 +1,220 @@
+.home-div1 {
+  margin-top: 5em;
+  width: 100%;
+  height: 90vh;
+  text-align: center;
+}
+
+/* Profile div  */
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
+  margin-top: 12em;
+}
+
+.profile h1 {
+  margin-left: 0.75em;
+  font-size: 3em;
+}
+
+.profile > img {
+  display: flex;
+  border-radius: 5em;
+  box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+.home-div1 h2 {
+  font-family: 'Anonymous Pro', monospace;
+}
+
+.line-1 {
+  position: relative;
+  width: 16em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 16em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+/* LinkedIn, GitHub and YouTube Buttons */
+.home-accounts {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  text-align: center;
+}
+
+.home-accounts-linkedin {
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: #2867b2;
+}
+.home-accounts-github {
+  grid-area: 1 / 2 / 2 / 3;
+  background-color: #24292e;
+}
+
+.home-accounts-youtube {
+  grid-area: 1 / 3 / 2 / 4;
+  background-color: #ff0000;
+}
+
+.home-accounts-linkedin > a {
+  width: 100%;
+  margin-top: 2em;
+  font-size: 5em;
+  text-decoration: none;
+  color: white;
+}
+
+.home-accounts-github > a {
+  width: 100%;
+  margin-top: 2em;
+  font-size: 5em;
+  text-decoration: none;
+  color: white;
+}
+
+.home-accounts-youtube > a {
+  width: 100%;
+  margin-top: 2em;
+  font-size: 5em;
+  text-decoration: none;
+  color: white;
+}
+
+.navigate-page-button {
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 15em;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border: 1.5px solid white;
+  border-radius: 0.5em;
+}
+
+.navigate-page-button:focus {
+  outline: none; /*Removes button outline on click */
+}
+
+.home-div3 {
+  min-height: 90vh;
+  text-align: center;
+}
+
+.home-div3 .navigate-page-button {
+  position: relative;
+  padding: 1em 3em;
+  margin-left: 4em;
+  margin-right: 4em;
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.home-div3 .navigate-page-button a {
+  font-size: 1.25em;
+}
+
+.home-div3 .navigate-page-button a {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.home-div3 .navigate-page-button a:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -1.5em;
+  transition: 0.5s;
+}
+
+.home-div3 .navigate-page-button:hover a {
+  padding-right: 25px;
+}
+
+.home-div3 .navigate-page-button:hover a:after {
+  opacity: 1;
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .profile h1 {
+    margin-left: 0;
+  }
+
+  .profile img {
+    margin-left: 2em;
+  }
+
+  .home-accounts {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .home-accounts-linkedin {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .home-accounts-github {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .home-accounts-youtube {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  .navigate-page-button {
+    margin-bottom: 2em;
+    margin-top: 6em;
+  }
+
+  .home-accounts-linkedin > a,
+  .home-accounts-github > a,
+  .home-accounts-youtube > a {
+    margin-top: 1em;
+  }
+
+  .home-div3 {
+    height: 105vh;
+    text-align: center;
+  }
+}

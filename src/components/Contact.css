@@ -1,0 +1,54 @@
+.contact-div {
+  margin-top: 6em;
+  height: 80vh;
+}
+
+.contact-title-div {
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: center;
+  height: 4em;
+}
+
+.contact-title-div a {
+  line-height: 4em;
+}
+
+.contact-title-underline {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  font-size: 2em;
+}
+
+.contact-title-underline,
+.contact-title-underline,
+.contact-title-underline,
+.contact-title-underline {
+  color: #fff;
+  text-decoration: none;
+}
+.contact-title-underline::after {
+  content: "";
+  position: absolute;
+}
+.contact-title-div .contact-title-underline::after {
+  top: 65%;
+  height: 2px;
+  width: 90%;
+  left: 5%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-methods{
+    margin-top: 4em;
+    margin-left: 3em;
+    font-size: 1.25em;
+}
+
+.contact-methods i{
+    margin-right: 0.5em;
+}
+
+

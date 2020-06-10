@@ -11,6 +11,7 @@ class Home extends Component {
             <img src={require("../assets/images/avatar.png")}></img>
             <h1>Luke Grech</h1>
           </div>
+          {/* Typewriter effect */}
           <h2 class="line-1 anim-typewriter">Front End Developer & Student</h2>
         </div>
         <div className="home-accounts">

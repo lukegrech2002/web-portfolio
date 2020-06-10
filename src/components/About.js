@@ -6,7 +6,7 @@ function About() {
     <React.Fragment>
       <div className="about-div1">
         {/* Title with underline */}
-      <div className="about-title-div">
+        <div className="about-title-div">
           <a class="about-title-underline">About Me</a>
         </div>
         <div className="about-card">
@@ -16,15 +16,19 @@ function About() {
           <div className="about-card-name">
             <h3>Luke Grech</h3>
           </div>
-          <div className="about-card-job">
-            <h4>Front-End Developer and Student</h4>
+          <div className="about-card-location">
+            <i class="fas fa-map-marker-alt"></i><h4>Malta</h4>
           </div>
           <div className="about-card-description">
             <p>
-              I am a student that is currently pursuing a BSc in
-              Information Technology at Middlesex University Malta.
+              I am a student that is currently pursuing a BSc in Information
+              Technology at Middlesex University Malta. I enjoy coding the front
+              end parts of web apps in my free time, but I also enjoy learning
+              about back-end technologies.
             </p>
-            <button className="cv-link-button"><a href={require("../assets/pdf/CV.pdf")}>View Resume</a></button>
+            <button className="cv-link-button">
+              <a href={require("../assets/pdf/CV.pdf")}>View Resume</a>
+            </button>
           </div>
         </div>
       </div>
